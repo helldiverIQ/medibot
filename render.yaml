@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: medibot
+    runtime: python
+    plan: free
+    buildCommand: "echo no dependencies"
+    startCommand: "python app.py"
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: SMTP_EMAIL
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false

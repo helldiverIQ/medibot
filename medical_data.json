@@ -1,0 +1,2902 @@
+{
+ "about": {
+  "name": "MediBot Medical Knowledge Base (Arabic)",
+  "version": "2.0",
+  "source": "Disease–symptom matrix and severity weights from github.com/itachi9604/healthcare-chatbot (MasterData + Data/dataset.csv)",
+  "augmented": "أُضيفت أعراض سريرية معروفة ناقصة لبعض الأمراض (النزلة المعوية، الحساسية، الزكام، التهاب المسالك...)",
+  "note": "الأسماء العربية والمرادفات والأوصاف والنصائح كُتبت للمشروع. معلومات عامة وليست بديلاً عن الطبيب.",
+  "counts": {
+   "diseases": 41,
+   "symptoms": 131,
+   "topics": 12
+  }
+ },
+ "symptoms": {
+  "itching": {
+   "ar": "حكة",
+   "syn": [
+    "حكه",
+    "حكة",
+    "هرش",
+    "اهرش",
+    "يحكني",
+    "جسمي يحكني",
+    "itching",
+    "itch"
+   ],
+   "severity": 1,
+   "ask": true,
+   "tips": [
+    "كمادات باردة تخفف الحكة",
+    "ملابس قطنية واسعة",
+    "مرطّب بدون عطور"
+   ]
+  },
+  "skin_rash": {
+   "ar": "طفح جلدي",
+   "syn": [
+    "طفح",
+    "حبوب في الجلد",
+    "حبوب بالجلد",
+    "احمرار الجلد",
+    "احمرار في الجلد",
+    "rash"
+   ],
+   "severity": 3,
+   "ask": true,
+   "tips": [
+    "لا تحك المنطقة",
+    "استخدم صابوناً لطيفاً بدون عطور",
+    "تذكّر هل جربت منتجاً أو دواءً أو أكلاً جديداً"
+   ]
+  },
+  "nodal_skin_eruptions": {
+   "ar": "نتوءات جلدية",
+   "syn": [
+    "نتوءات",
+    "عقد في الجلد",
+    "بثور جلديه"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "continuous_sneezing": {
+   "ar": "عطاس مستمر",
+   "syn": [
+    "عطاس",
+    "عطس",
+    "اعطس",
+    "sneez"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "ابتعد عن الغبار والعطور القوية",
+    "اغسل أنفك بمحلول ملحي"
+   ]
+  },
+  "shivering": {
+   "ar": "ارتجاف",
+   "syn": [
+    "رجفه",
+    "ارتجاف",
+    "ارجف",
+    "رعشه",
+    "shiver"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "chills": {
+   "ar": "قشعريرة",
+   "syn": [
+    "قشعريره",
+    "بردان",
+    "برد في جسمي",
+    "chills"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "joint_pain": {
+   "ar": "ألم المفاصل",
+   "syn": [
+    "مفاصل",
+    "مفصل",
+    "joint pain"
+   ],
+   "severity": 3,
+   "ask": true,
+   "tips": [
+    "كمادات دافئة أو باردة حسب ما يريحك",
+    "حركة لطيفة وتمارين إطالة"
+   ]
+  },
+  "stomach_pain": {
+   "ar": "ألم المعدة",
+   "syn": [
+    "معدتي",
+    "الم معده",
+    "الم في المعده",
+    "وجع معده",
+    "وجع في المعده",
+    "stomach pain",
+    "stomach ache"
+   ],
+   "severity": 5,
+   "ask": true,
+   "tips": [
+    "وجبات صغيرة ومتكررة",
+    "قلّل القهوة والأكل الحار والدهني"
+   ]
+  },
+  "acidity": {
+   "ar": "حموضة",
+   "syn": [
+    "حموضه",
+    "حرقه معده",
+    "حرقان معده",
+    "حرقه في المعده",
+    "حرقه بالصدر",
+    "acidity",
+    "heartburn"
+   ],
+   "severity": 3,
+   "ask": true,
+   "tips": [
+    "لا تستلقِ بعد الأكل مباشرة",
+    "وجبات أصغر وقلّل القهوة والأكل الحار"
+   ]
+  },
+  "ulcers_on_tongue": {
+   "ar": "تقرحات اللسان",
+   "syn": [
+    "قرحه في اللسان",
+    "تقرحات اللسان",
+    "حبوب في اللسان",
+    "لساني"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "muscle_wasting": {
+   "ar": "ضمور العضلات",
+   "syn": [
+    "ضمور",
+    "نحول العضلات"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "vomiting": {
+   "ar": "تقيؤ",
+   "syn": [
+    "استفراغ",
+    "ترجيع",
+    "تقيؤ",
+    "اتقيا",
+    "استفرغ",
+    "ارجع",
+    "vomit"
+   ],
+   "severity": 5,
+   "ask": true,
+   "tips": [
+    "رشفات صغيرة متكررة من الماء أو محلول الإرواء",
+    "ابدأ بأكل خفيف بعد توقف التقيؤ"
+   ]
+  },
+  "burning_micturition": {
+   "ar": "حرقة البول",
+   "syn": [
+    "حرقه بول",
+    "حرقه البول",
+    "حرقان بول",
+    "حرقان البول",
+    "حرقه في البول",
+    "حرقه لما ابول",
+    "burning urin"
+   ],
+   "severity": 6,
+   "ask": true,
+   "tips": [
+    "اشرب ماء كثيراً",
+    "لا تحبس البول"
+   ]
+  },
+  "spotting_urination": {
+   "ar": "تنقيط البول",
+   "syn": [
+    "تنقيط البول",
+    "تقطير البول",
+    "تنقيط"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "fatigue": {
+   "ar": "تعب وإرهاق",
+   "syn": [
+    "تعب",
+    "تعبان",
+    "ارهاق",
+    "مرهق",
+    "fatigue",
+    "tired"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "نم 7–9 ساعات بانتظام",
+    "اشرب ماء وتناول وجبات متوازنة",
+    "إذا استمر التعب أكثر من أسبوعين فالتحاليل مهمة"
+   ]
+  },
+  "weight_gain": {
+   "ar": "زيادة الوزن",
+   "syn": [
+    "زياده وزن",
+    "زياده الوزن",
+    "زاد وزني",
+    "سمنت",
+    "weight gain"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "anxiety": {
+   "ar": "قلق",
+   "syn": [
+    "قلق",
+    "متوتر",
+    "anxiety"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "تنفس ببطء: شهيق 4 ثوانٍ، حبس 4، زفير 6",
+    "تحدث مع شخص تثق به",
+    "المشي والنوم الجيد يساعدان كثيراً"
+   ]
+  },
+  "cold_hands_and_feets": {
+   "ar": "برودة اليدين والقدمين",
+   "syn": [
+    "برود اليدين",
+    "ايدي بارده",
+    "اطرافي بارده",
+    "رجولي بارده",
+    "بروده الاطراف"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "mood_swings": {
+   "ar": "تقلبات المزاج",
+   "syn": [
+    "تقلب المزاج",
+    "مزاجي متقلب",
+    "تقلبات مزاجيه",
+    "mood swing"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "weight_loss": {
+   "ar": "نقص الوزن",
+   "syn": [
+    "نقص وزن",
+    "نقص الوزن",
+    "نزل وزني",
+    "خسيت",
+    "نحفت",
+    "فقدان الوزن",
+    "weight loss"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "restlessness": {
+   "ar": "عدم الارتياح والتململ",
+   "syn": [
+    "عدم ارتياح",
+    "ما اقدر استقر",
+    "تململ",
+    "restless"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "lethargy": {
+   "ar": "خمول",
+   "syn": [
+    "خمول",
+    "كسل",
+    "نعسان طول الوقت",
+    "lethargy"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "patches_in_throat": {
+   "ar": "بقع في الحلق",
+   "syn": [
+    "بقع في الحلق",
+    "بقع بالحلق"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "irregular_sugar_level": {
+   "ar": "ارتفاع السكر في التحاليل",
+   "syn": [
+    "السكر عالي",
+    "ارتفاع السكر",
+    "السكر مضطرب",
+    "السكر مرتفع",
+    "sugar level"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "cough": {
+   "ar": "كحة",
+   "syn": [
+    "كحه",
+    "سعال",
+    "اكح",
+    "كحيت",
+    "cough"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "السوائل الدافئة والعسل تهدّئ الحلق (العسل ليس للرضع تحت سنة)",
+    "استنشاق البخار يساعد على تليين البلغم",
+    "تجنّب التدخين والدخان"
+   ]
+  },
+  "high_fever": {
+   "ar": "حرارة مرتفعة",
+   "syn": [
+    "حراره عاليه",
+    "حراره مرتفعه",
+    "حمى",
+    "حمي",
+    "سخونه",
+    "سخن",
+    "حراره",
+    "حرارتي",
+    "fever"
+   ],
+   "severity": 7,
+   "ask": true,
+   "tips": [
+    "اشرب سوائل كثيرة وارتح",
+    "البس ملابس خفيفة واستخدم كمادات فاترة (ليست باردة)",
+    "يمكن استخدام خافض حرارة حسب النشرة أو بعد سؤال الصيدلي"
+   ]
+  },
+  "sunken_eyes": {
+   "ar": "غؤور العينين",
+   "syn": [
+    "عيوني غايره",
+    "عيون غائره",
+    "sunken eyes"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "breathlessness": {
+   "ar": "ضيق التنفس",
+   "syn": [
+    "ضيق تنفس",
+    "ضيق في التنفس",
+    "ضيقه في التنفس",
+    "صعوبه تنفس",
+    "صعوبه في التنفس",
+    "كتمه",
+    "نهجان",
+    "breathless",
+    "shortness of breath"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "sweating": {
+   "ar": "تعرّق",
+   "syn": [
+    "تعرق",
+    "اعرق",
+    "عرق",
+    "sweat"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "dehydration": {
+   "ar": "جفاف وعطش",
+   "syn": [
+    "جفاف",
+    "عطش شديد",
+    "عطشان",
+    "عطش",
+    "dehydrat",
+    "thirst"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "indigestion": {
+   "ar": "عسر الهضم",
+   "syn": [
+    "عسر هضم",
+    "سوء هضم",
+    "تلبك",
+    "indigestion"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "headache": {
+   "ar": "صداع",
+   "syn": [
+    "صداع",
+    "راسي",
+    "الم راس",
+    "الم الراس",
+    "وجع راس",
+    "الم في الراس",
+    "headache"
+   ],
+   "severity": 3,
+   "ask": true,
+   "tips": [
+    "اشرب ماء كافياً — الجفاف من أشهر أسباب الصداع",
+    "ارتح في مكان هادئ وخفيف الإضاءة وقلّل الشاشات",
+    "انتبه للنوم والكافيين ووجبات منتظمة"
+   ]
+  },
+  "yellowish_skin": {
+   "ar": "اصفرار الجلد",
+   "syn": [
+    "اصفرار الجلد",
+    "جلدي اصفر",
+    "بشرتي صفرا",
+    "اصفرار",
+    "yellow skin"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "dark_urine": {
+   "ar": "بول داكن",
+   "syn": [
+    "بول غامق",
+    "بول داكن",
+    "البول غامق",
+    "لون البول غامق",
+    "dark urine"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "nausea": {
+   "ar": "غثيان",
+   "syn": [
+    "غثيان",
+    "لوعه",
+    "نفسي تلوع",
+    "لعيان نفس",
+    "nausea"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "loss_of_appetite": {
+   "ar": "فقدان الشهية",
+   "syn": [
+    "فقدان الشهيه",
+    "ما عندي شهيه",
+    "ماعندي شهيه",
+    "ما لي نفس للاكل",
+    "قله الشهيه",
+    "ما اشتهي",
+    "loss of appetite"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "pain_behind_the_eyes": {
+   "ar": "ألم خلف العينين",
+   "syn": [
+    "خلف العين",
+    "ورا عيوني",
+    "وجع عيوني",
+    "الم في عيوني"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "back_pain": {
+   "ar": "ألم الظهر",
+   "syn": [
+    "ظهري",
+    "الم ظهر",
+    "الم الظهر",
+    "وجع ظهر",
+    "back pain"
+   ],
+   "severity": 3,
+   "ask": true,
+   "tips": [
+    "حافظ على حركة خفيفة بدل الراحة التامة",
+    "كمادات دافئة وجلسة صحيحة",
+    "تجنّب رفع الأشياء الثقيلة"
+   ]
+  },
+  "constipation": {
+   "ar": "إمساك",
+   "syn": [
+    "امساك",
+    "قبض",
+    "constipat"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "أكثر من الألياف (خضار، فواكه، شوفان)",
+    "اشرب ماء كافياً وتحرّك يومياً"
+   ]
+  },
+  "abdominal_pain": {
+   "ar": "ألم البطن",
+   "syn": [
+    "بطني",
+    "مغص",
+    "الم بطن",
+    "الم البطن",
+    "الم في البطن",
+    "وجع بطن",
+    "abdominal pain"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "وجبات خفيفة وصغيرة",
+    "تجنّب الدهون والبهارات مؤقتاً",
+    "كمادة دافئة على البطن قد تريح"
+   ]
+  },
+  "diarrhoea": {
+   "ar": "إسهال",
+   "syn": [
+    "اسهال",
+    "اسهل",
+    "diarrh"
+   ],
+   "severity": 6,
+   "ask": true,
+   "tips": [
+    "محلول الإرواء الفموي أهم شيء لتعويض السوائل",
+    "أكل خفيف مثل الأرز والموز والخبز المحمص",
+    "اغسل يديك جيداً لمنع العدوى"
+   ]
+  },
+  "mild_fever": {
+   "ar": "حرارة خفيفة",
+   "syn": [
+    "حراره خفيفه",
+    "حراره بسيطه",
+    "سخونه بسيطه",
+    "سخونه خفيفه",
+    "mild fever"
+   ],
+   "severity": 5,
+   "ask": true,
+   "tips": [
+    "الراحة والسوائل تكفي غالباً",
+    "راقب الحرارة كل بضع ساعات"
+   ]
+  },
+  "yellow_urine": {
+   "ar": "بول أصفر غامق",
+   "syn": [
+    "بول اصفر",
+    "البول اصفر"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "yellowing_of_eyes": {
+   "ar": "اصفرار العينين",
+   "syn": [
+    "اصفرار العين",
+    "عيوني صفرا",
+    "بياض العين اصفر"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "acute_liver_failure": {
+   "ar": "فشل كبدي حاد",
+   "syn": [
+    "فشل كبدي"
+   ],
+   "severity": 6,
+   "ask": false
+  },
+  "fluid_overload": {
+   "ar": "احتباس السوائل",
+   "syn": [
+    "احتباس سوائل",
+    "احتباس السوائل",
+    "تجمع سوائل"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "swelling_of_stomach": {
+   "ar": "انتفاخ البطن",
+   "syn": [
+    "انتفاخ البطن",
+    "بطني منتفخ",
+    "نفخه"
+   ],
+   "severity": 7,
+   "ask": true
+  },
+  "swelled_lymph_nodes": {
+   "ar": "تضخم الغدد اللمفاوية",
+   "syn": [
+    "غدد منتفخه",
+    "تضخم الغدد",
+    "انتفاخ الغدد",
+    "غده في الرقبه"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "malaise": {
+   "ar": "توعّك عام",
+   "syn": [
+    "توعك",
+    "جسمي مكسر",
+    "تكسير",
+    "تكسر",
+    "malaise"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "blurred_and_distorted_vision": {
+   "ar": "تشوّش الرؤية",
+   "syn": [
+    "زغلله",
+    "تشوش الرؤيه",
+    "نظري مشوش",
+    "ضبابيه",
+    "blurred vision"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "phlegm": {
+   "ar": "بلغم",
+   "syn": [
+    "بلغم",
+    "phlegm"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "throat_irritation": {
+   "ar": "التهاب الحلق",
+   "syn": [
+    "حلقي",
+    "الحلق",
+    "خشونه",
+    "sore throat"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "الغرغرة بماء دافئ وملح",
+    "مشروبات دافئة مع عسل",
+    "قلّل الكلام وارتح"
+   ]
+  },
+  "redness_of_eyes": {
+   "ar": "احمرار العينين",
+   "syn": [
+    "احمرار العين",
+    "عيوني حمرا",
+    "red eyes"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "sinus_pressure": {
+   "ar": "ضغط الجيوب الأنفية",
+   "syn": [
+    "الجيوب",
+    "جيوب انفيه",
+    "sinus"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "runny_nose": {
+   "ar": "سيلان الأنف",
+   "syn": [
+    "سيلان",
+    "رشح",
+    "زكام",
+    "خشمي يسيل",
+    "انفي يسيل",
+    "runny nose"
+   ],
+   "severity": 5,
+   "ask": true,
+   "tips": [
+    "غسول ملحي للأنف",
+    "راحة وسوائل دافئة"
+   ]
+  },
+  "congestion": {
+   "ar": "انسداد الأنف",
+   "syn": [
+    "انسداد الانف",
+    "خشمي مسدود",
+    "انفي مسدود",
+    "congestion",
+    "stuffy"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "chest_pain": {
+   "ar": "ألم الصدر",
+   "syn": [
+    "الم صدر",
+    "الم الصدر",
+    "وجع صدر",
+    "الم في الصدر",
+    "صدري يعورني",
+    "chest pain"
+   ],
+   "severity": 7,
+   "ask": true
+  },
+  "weakness_in_limbs": {
+   "ar": "ضعف الأطراف",
+   "syn": [
+    "ضعف الاطراف",
+    "ضعف في ايدي",
+    "ضعف في رجلي"
+   ],
+   "severity": 7,
+   "ask": true
+  },
+  "fast_heart_rate": {
+   "ar": "تسارع ضربات القلب",
+   "syn": [
+    "تسارع القلب",
+    "دقات قلب سريعه",
+    "قلبي يدق بسرعه",
+    "سرعه نبض",
+    "fast heart"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "pain_during_bowel_movements": {
+   "ar": "ألم أثناء التبرز",
+   "syn": [
+    "الم عند التبرز",
+    "الم اثناء التبرز",
+    "الم لما اروح الحمام"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "pain_in_anal_region": {
+   "ar": "ألم في منطقة الشرج",
+   "syn": [
+    "الم الشرج",
+    "الم في الشرج",
+    "المقعده"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "bloody_stool": {
+   "ar": "دم في البراز",
+   "syn": [
+    "دم في البراز",
+    "دم مع البراز",
+    "براز دموي",
+    "blood in stool"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "irritation_in_anus": {
+   "ar": "تهيّج الشرج",
+   "syn": [
+    "حكه في الشرج",
+    "تهيج الشرج"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "neck_pain": {
+   "ar": "ألم الرقبة",
+   "syn": [
+    "رقبتي",
+    "الم الرقبه",
+    "وجع الرقبه",
+    "neck pain"
+   ],
+   "severity": 5,
+   "ask": true,
+   "tips": [
+    "ارفع الشاشة لمستوى النظر",
+    "كمادات دافئة وتمارين إطالة لطيفة"
+   ]
+  },
+  "dizziness": {
+   "ar": "دوخة",
+   "syn": [
+    "دوخه",
+    "دايخ",
+    "ادوخ",
+    "dizz"
+   ],
+   "severity": 4,
+   "ask": true,
+   "tips": [
+    "اجلس أو استلقِ فوراً عند الدوخة لتجنب السقوط",
+    "اشرب ماء وتأكد أنك أكلت",
+    "قم من الجلوس ببطء"
+   ]
+  },
+  "cramps": {
+   "ar": "تشنجات عضلية",
+   "syn": [
+    "تشنج",
+    "شد عضلي",
+    "تقلصات",
+    "cramp"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "bruising": {
+   "ar": "كدمات",
+   "syn": [
+    "كدمات",
+    "ازرقاق",
+    "bruis"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "obesity": {
+   "ar": "سمنة",
+   "syn": [
+    "سمنه",
+    "وزن زايد",
+    "obes"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "swollen_legs": {
+   "ar": "تورم الساقين",
+   "syn": [
+    "تورم الرجل",
+    "رجولي منتفخه",
+    "تورم الساق",
+    "swollen leg"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "swollen_blood_vessels": {
+   "ar": "انتفاخ الأوعية الدموية",
+   "syn": [
+    "انتفاخ العروق",
+    "عروق منتفخه"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "puffy_face_and_eyes": {
+   "ar": "انتفاخ الوجه والعينين",
+   "syn": [
+    "انتفاخ الوجه",
+    "وجهي منتفخ",
+    "انتفاخ العين"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "enlarged_thyroid": {
+   "ar": "تضخم الغدة الدرقية",
+   "syn": [
+    "تضخم الغده",
+    "رقبتي منتفخه"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "brittle_nails": {
+   "ar": "هشاشة الأظافر",
+   "syn": [
+    "اظافري تتكسر",
+    "هشاشه الاظافر"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "swollen_extremeties": {
+   "ar": "تورم الأطراف",
+   "syn": [
+    "تورم الاطراف",
+    "تورم اليدين"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "excessive_hunger": {
+   "ar": "جوع مفرط",
+   "syn": [
+    "جوع شديد",
+    "جوعان دايما",
+    "جوع مفرط"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "extra_marital_contacts": {
+   "ar": "علاقات غير آمنة",
+   "syn": [
+    "علاقه غير امنه"
+   ],
+   "severity": 5,
+   "ask": false
+  },
+  "drying_and_tingling_lips": {
+   "ar": "جفاف ووخز الشفاه",
+   "syn": [
+    "جفاف الشفايف",
+    "وخز الشفاه",
+    "تنميل الشفايف"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "slurred_speech": {
+   "ar": "ثقل الكلام",
+   "syn": [
+    "ثقل في الكلام",
+    "تلعثم",
+    "كلامي ثقيل",
+    "slurred"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "knee_pain": {
+   "ar": "ألم الركبة",
+   "syn": [
+    "ركبه",
+    "ركبتي",
+    "knee"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "hip_joint_pain": {
+   "ar": "ألم مفصل الورك",
+   "syn": [
+    "الورك",
+    "وركي",
+    "hip"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "muscle_weakness": {
+   "ar": "ضعف العضلات",
+   "syn": [
+    "ضعف العضلات",
+    "ضعف عام"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "stiff_neck": {
+   "ar": "تيبّس الرقبة",
+   "syn": [
+    "تيبس الرقبه",
+    "تصلب الرقبه",
+    "رقبتي متيبسه",
+    "stiff neck"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "swelling_joints": {
+   "ar": "تورم المفاصل",
+   "syn": [
+    "تورم المفاصل",
+    "انتفاخ المفاصل"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "movement_stiffness": {
+   "ar": "تيبّس الحركة",
+   "syn": [
+    "تيبس",
+    "تصلب",
+    "صعوبه الحركه"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "spinning_movements": {
+   "ar": "إحساس بالدوران",
+   "syn": [
+    "الدنيا تدور",
+    "دوران",
+    "الغرفه تدور",
+    "دوار",
+    "vertigo"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "loss_of_balance": {
+   "ar": "فقدان التوازن",
+   "syn": [
+    "فقدان التوازن",
+    "عدم توازن",
+    "اختلال التوازن"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "unsteadiness": {
+   "ar": "عدم الثبات",
+   "syn": [
+    "عدم الثبات",
+    "ما اقدر اثبت",
+    "ترنح"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "weakness_of_one_body_side": {
+   "ar": "ضعف في جهة واحدة من الجسم",
+   "syn": [
+    "ضعف جهه وحده",
+    "ضعف نص الجسم",
+    "تنميل نص الجسم",
+    "ضعف في جانب"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "loss_of_smell": {
+   "ar": "فقدان حاسة الشم",
+   "syn": [
+    "فقدان الشم",
+    "ما اشم",
+    "loss of smell"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "bladder_discomfort": {
+   "ar": "انزعاج المثانة",
+   "syn": [
+    "مثانه",
+    "المثانه"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "foul_smell_ofurine": {
+   "ar": "رائحة بول كريهة",
+   "syn": [
+    "ريحه البول",
+    "رائحه البول"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "continuous_feel_of_urine": {
+   "ar": "إلحاح مستمر للتبول",
+   "syn": [
+    "احس اني ابي ابول",
+    "رغبه مستمره بالتبول",
+    "الحاح البول"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "passage_of_gases": {
+   "ar": "غازات",
+   "syn": [
+    "غازات",
+    "gas"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "internal_itching": {
+   "ar": "حكة داخلية",
+   "syn": [
+    "حكه داخليه"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "toxic_look_(typhos)": {
+   "ar": "مظهر إعياء شديد",
+   "syn": [
+    "اعياء شديد"
+   ],
+   "severity": 5,
+   "ask": false
+  },
+  "depression": {
+   "ar": "اكتئاب",
+   "syn": [
+    "اكتئاب",
+    "مكتئب",
+    "حزين",
+    "depress"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "irritability": {
+   "ar": "سرعة الانفعال",
+   "syn": [
+    "عصبيه",
+    "سريع الانفعال",
+    "عصبي",
+    "irritab"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "muscle_pain": {
+   "ar": "ألم العضلات",
+   "syn": [
+    "عضلات",
+    "الم عضلي",
+    "جسمي يعورني",
+    "muscle pain"
+   ],
+   "severity": 2,
+   "ask": true,
+   "tips": [
+    "راحة وكمادات دافئة",
+    "اشرب ماء وتمدد بلطف"
+   ]
+  },
+  "altered_sensorium": {
+   "ar": "تشوّش الوعي",
+   "syn": [
+    "تشوش ذهني",
+    "لخبطه",
+    "تغير الوعي",
+    "confusion"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "red_spots_over_body": {
+   "ar": "بقع حمراء على الجسم",
+   "syn": [
+    "بقع حمرا",
+    "بقع حمراء",
+    "نقاط حمراء",
+    "نقاط حمرا"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "belly_pain": {
+   "ar": "ألم حول السرة",
+   "syn": [
+    "السره",
+    "حول السره"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "abnormal_menstruation": {
+   "ar": "اضطراب الدورة الشهرية",
+   "syn": [
+    "الدوره",
+    "اضطراب الدوره"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "dischromic_patches": {
+   "ar": "بقع متغيرة اللون في الجلد",
+   "syn": [
+    "بقع بيضا",
+    "بقع داكنه",
+    "تغير لون الجلد"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "watering_from_eyes": {
+   "ar": "دموع العين",
+   "syn": [
+    "عيوني تدمع",
+    "تدميع",
+    "دموع"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "increased_appetite": {
+   "ar": "زيادة الشهية",
+   "syn": [
+    "زياده الشهيه",
+    "شهيتي زايده",
+    "شهيتي مفتوحه"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "polyuria": {
+   "ar": "كثرة التبول",
+   "syn": [
+    "كثره التبول",
+    "اتبول كثير",
+    "ابول كثير",
+    "كثره البول",
+    "polyuria"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "family_history": {
+   "ar": "تاريخ عائلي للمرض",
+   "syn": [
+    "وراثي",
+    "في عايلتي",
+    "تاريخ عائلي"
+   ],
+   "severity": 5,
+   "ask": false
+  },
+  "mucoid_sputum": {
+   "ar": "بلغم مخاطي",
+   "syn": [
+    "بلغم مخاطي"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "rusty_sputum": {
+   "ar": "بلغم بلون الصدأ",
+   "syn": [
+    "بلغم بني",
+    "بلغم لون صدا"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "lack_of_concentration": {
+   "ar": "ضعف التركيز",
+   "syn": [
+    "ضعف التركيز",
+    "ما اقدر اركز",
+    "قله تركيز"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "visual_disturbances": {
+   "ar": "اضطرابات بصرية",
+   "syn": [
+    "اضطراب الرؤيه",
+    "ومضات",
+    "هالات ضوئيه"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "receiving_blood_transfusion": {
+   "ar": "نقل دم سابق",
+   "syn": [
+    "نقل دم"
+   ],
+   "severity": 5,
+   "ask": false
+  },
+  "receiving_unsterile_injections": {
+   "ar": "حقن غير معقمة",
+   "syn": [
+    "ابر غير معقمه"
+   ],
+   "severity": 2,
+   "ask": false
+  },
+  "coma": {
+   "ar": "غيبوبة",
+   "syn": [
+    "غيبوبه"
+   ],
+   "severity": 7,
+   "ask": false
+  },
+  "stomach_bleeding": {
+   "ar": "نزيف في المعدة",
+   "syn": [
+    "نزيف معده",
+    "استفراغ دم",
+    "تقيؤ دم"
+   ],
+   "severity": 6,
+   "ask": false
+  },
+  "distention_of_abdomen": {
+   "ar": "تمدد البطن",
+   "syn": [
+    "تمدد البطن",
+    "بطني كبرت"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "history_of_alcohol_consumption": {
+   "ar": "شرب الكحول",
+   "syn": [
+    "كحول",
+    "خمر",
+    "alcohol"
+   ],
+   "severity": 5,
+   "ask": false
+  },
+  "blood_in_sputum": {
+   "ar": "دم مع البلغم",
+   "syn": [
+    "دم مع البلغم",
+    "بلغم فيه دم",
+    "اكح دم",
+    "cough blood"
+   ],
+   "severity": 5,
+   "ask": true
+  },
+  "prominent_veins_on_calf": {
+   "ar": "بروز عروق الساق",
+   "syn": [
+    "عروق بارزه",
+    "عروق الساق"
+   ],
+   "severity": 6,
+   "ask": true
+  },
+  "palpitations": {
+   "ar": "خفقان",
+   "syn": [
+    "خفقان",
+    "قلبي يدق",
+    "palpitation"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "painful_walking": {
+   "ar": "ألم أثناء المشي",
+   "syn": [
+    "الم عند المشي",
+    "المشي يعورني"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "pus_filled_pimples": {
+   "ar": "حبوب بها صديد",
+   "syn": [
+    "حبوب في وجهي",
+    "حبوب بوجهي",
+    "بثور",
+    "صديد",
+    "pimple"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "blackheads": {
+   "ar": "رؤوس سوداء",
+   "syn": [
+    "رؤوس سوداء",
+    "رؤوس سودا",
+    "blackhead"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "scurring": {
+   "ar": "ندبات",
+   "syn": [
+    "ندبات",
+    "اثار الحبوب",
+    "ندوب"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "skin_peeling": {
+   "ar": "تقشّر الجلد",
+   "syn": [
+    "تقشر",
+    "قشره بالجلد"
+   ],
+   "severity": 3,
+   "ask": true
+  },
+  "silver_like_dusting": {
+   "ar": "قشور فضية",
+   "syn": [
+    "قشور فضيه",
+    "قشور بيضا"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "small_dents_in_nails": {
+   "ar": "نُقَر صغيرة في الأظافر",
+   "syn": [
+    "نقر في الاظافر"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "inflammatory_nails": {
+   "ar": "التهاب الأظافر",
+   "syn": [
+    "التهاب الاظافر"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "blister": {
+   "ar": "فقاعات مائية",
+   "syn": [
+    "فقاعات",
+    "بثور مائيه",
+    "نفاطات"
+   ],
+   "severity": 4,
+   "ask": true
+  },
+  "red_sore_around_nose": {
+   "ar": "قرحة حمراء حول الأنف",
+   "syn": [
+    "حول الانف",
+    "حول خشمي"
+   ],
+   "severity": 2,
+   "ask": true
+  },
+  "yellow_crust_ooze": {
+   "ar": "قشرة صفراء نازّة",
+   "syn": [
+    "قشره صفرا",
+    "قشره صفراء"
+   ],
+   "severity": 3,
+   "ask": true
+  }
+ },
+ "diseases": {
+  "Fungal infection": {
+   "ar": "عدوى فطرية جلدية",
+   "names": [
+    "فطريات",
+    "عدوى فطريه",
+    "فطر جلدي",
+    "تينيا"
+   ],
+   "en": "Fungal infection",
+   "desc": "عدوى تصيب الجلد بسبب الفطريات، تنتشر في الأماكن الرطبة والدافئة وتسبب حكة وبقعاً متغيرة اللون.",
+   "care": [
+    "حافظ على المنطقة جافة ونظيفة",
+    "البس ملابس قطنية واسعة",
+    "لا تشارك المناشف والأدوات الشخصية",
+    "كريمات مضادة للفطريات متوفرة بعد سؤال الصيدلي"
+   ],
+   "doctor": "طبيب الجلدية",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 1.15,
+   "symptoms": [
+    "dischromic_patches",
+    "itching",
+    "nodal_skin_eruptions",
+    "skin_rash"
+   ],
+   "desc_en": "In humans, fungal infections occur when an invading fungus takes over an area of the body and is too much for the immune system to handle. Fungi can live in the air, soil, water, and plants. There are also some fungi that live naturally in the human body. Like many microbes, there are helpful fungi and harmful fungi."
+  },
+  "Allergy": {
+   "ar": "الحساسية",
+   "names": [
+    "حساسيه",
+    "الحساسيه"
+   ],
+   "en": "Allergy",
+   "desc": "رد فعل مبالغ فيه من جهاز المناعة تجاه مواد عادية مثل الغبار وحبوب اللقاح وبعض الأطعمة.",
+   "care": [
+    "تجنّب المسبب إن عرفته",
+    "اغسل وجهك وأنفك بعد التعرض للغبار",
+    "مضادات الهيستامين قد تخفف الأعراض بعد سؤال الصيدلي"
+   ],
+   "doctor": "طبيب الحساسية والمناعة",
+   "red_flags": "تورم الوجه أو الشفاه أو صعوبة التنفس = طوارئ فوراً",
+   "urgent": false,
+   "prior": 1.2,
+   "symptoms": [
+    "chills",
+    "congestion",
+    "continuous_sneezing",
+    "itching",
+    "redness_of_eyes",
+    "runny_nose",
+    "shivering",
+    "watering_from_eyes"
+   ],
+   "desc_en": "An allergy is an immune system response to a foreign substance that's not typically harmful to your body.They can include certain foods, pollen, or pet dander. Your immune system's job is to keep you healthy by fighting harmful pathogens."
+  },
+  "GERD": {
+   "ar": "ارتجاع المريء",
+   "names": [
+    "ارتجاع",
+    "ارتجاع المريء",
+    "حموضه مزمنه",
+    "gerd"
+   ],
+   "en": "GERD",
+   "desc": "رجوع حمض المعدة إلى المريء، مما يسبب حرقة خلف الصدر وطعماً حامضاً في الفم.",
+   "care": [
+    "وجبات صغيرة ومتعددة",
+    "لا تستلقِ قبل مرور 3 ساعات على الأكل",
+    "ارفع رأس السرير قليلاً",
+    "قلّل القهوة والمقليات والأكل الحار"
+   ],
+   "doctor": "طبيب الجهاز الهضمي",
+   "red_flags": "صعوبة بلع أو استفراغ دم أو نقص وزن غير مبرر",
+   "urgent": false,
+   "prior": 1.2,
+   "symptoms": [
+    "acidity",
+    "chest_pain",
+    "cough",
+    "indigestion",
+    "nausea",
+    "stomach_pain",
+    "ulcers_on_tongue",
+    "vomiting"
+   ],
+   "desc_en": "Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD."
+  },
+  "Chronic cholestasis": {
+   "ar": "الركود الصفراوي المزمن",
+   "names": [
+    "ركود صفراوي"
+   ],
+   "en": "Chronic cholestasis",
+   "desc": "ضعف تدفق العصارة الصفراوية من الكبد، يسبب حكة واصفراراً في الجلد والعينين.",
+   "care": [
+    "تجنّب الدهون الثقيلة",
+    "لا تتناول أي دواء أو عشبة دون استشارة",
+    "متابعة تحاليل وظائف الكبد"
+   ],
+   "doctor": "طبيب الكبد والجهاز الهضمي",
+   "red_flags": "اصفرار متزايد مع حرارة أو تشوش",
+   "urgent": false,
+   "prior": 0.7,
+   "symptoms": [
+    "abdominal_pain",
+    "itching",
+    "loss_of_appetite",
+    "nausea",
+    "vomiting",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases"
+  },
+  "Drug Reaction": {
+   "ar": "تحسّس دوائي",
+   "names": [
+    "حساسيه دواء",
+    "تحسس من دواء",
+    "رده فعل دواء",
+    "تحسس دوائي"
+   ],
+   "en": "Drug Reaction",
+   "desc": "تفاعل غير مرغوب من الجسم تجاه دواء، قد يظهر على شكل طفح أو حكة أو أعراض أخرى.",
+   "care": [
+    "تواصل مع الطبيب أو الصيدلي بخصوص إيقاف الدواء المشتبه به",
+    "سجّل اسم الدواء لتتجنبه مستقبلاً"
+   ],
+   "doctor": "الطبيب الذي وصف الدواء أو الصيدلي",
+   "red_flags": "تورم الوجه أو ضيق التنفس = طوارئ فوراً",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "burning_micturition",
+    "itching",
+    "skin_rash",
+    "spotting_urination",
+    "stomach_pain"
+   ],
+   "desc_en": "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs."
+  },
+  "Peptic ulcer diseae": {
+   "ar": "قرحة المعدة",
+   "names": [
+    "قرحه",
+    "قرحه المعده",
+    "قرحه هضميه"
+   ],
+   "en": "Peptic ulcer diseae",
+   "desc": "جرح في بطانة المعدة أو الاثني عشر، من أشهر أسبابه بكتيريا الملوية البوابية (H. pylori) وكثرة المسكنات.",
+   "care": [
+    "تجنّب المسكنات المضادة للالتهاب دون استشارة",
+    "قلّل الأكل الحار والقهوة وتوقف عن التدخين",
+    "وجبات منتظمة"
+   ],
+   "doctor": "طبيب الجهاز الهضمي",
+   "red_flags": "استفراغ دم أو براز أسود = طوارئ",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "abdominal_pain",
+    "indigestion",
+    "internal_itching",
+    "loss_of_appetite",
+    "passage_of_gases",
+    "vomiting"
+   ],
+   "desc_en": "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer."
+  },
+  "AIDS": {
+   "ar": "فيروس نقص المناعة (HIV)",
+   "names": [
+    "ايدز",
+    "hiv",
+    "نقص المناعه المكتسب"
+   ],
+   "en": "AIDS",
+   "desc": "عدوى فيروسية تُضعف جهاز المناعة، تنتقل عبر الدم والعلاقات غير الآمنة ومن الأم لطفلها. يتوفر لها علاج فعّال يتيح حياة طبيعية.",
+   "care": [
+    "الفحص سري ومتاح في المراكز الصحية",
+    "الالتزام بالعلاج يمنع تطور المرض",
+    "عدم مشاركة الإبر والأدوات الحادة"
+   ],
+   "doctor": "طبيب الأمراض المعدية",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 0.6,
+   "symptoms": [
+    "extra_marital_contacts",
+    "high_fever",
+    "muscle_wasting",
+    "patches_in_throat"
+   ],
+   "desc_en": "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease."
+  },
+  "Diabetes": {
+   "ar": "السكري",
+   "names": [
+    "سكري",
+    "السكري",
+    "مرض السكر",
+    "داء السكري",
+    "diabetes"
+   ],
+   "en": "Diabetes",
+   "desc": "ارتفاع مزمن في سكر الدم بسبب نقص الإنسولين أو ضعف استجابة الجسم له. يمكن التحكم فيه جيداً بالمتابعة.",
+   "care": [
+    "قِس السكر بانتظام",
+    "قلّل السكريات والنشويات المكررة",
+    "نشاط بدني منتظم",
+    "التزم بالأدوية وافحص قدميك يومياً"
+   ],
+   "doctor": "طبيب الغدد الصماء والسكري",
+   "red_flags": "عطش شديد مع تقيؤ وتشوش، أو هبوط سكر مع فقدان وعي = طوارئ",
+   "urgent": false,
+   "prior": 1.1,
+   "symptoms": [
+    "blurred_and_distorted_vision",
+    "dehydration",
+    "excessive_hunger",
+    "fatigue",
+    "increased_appetite",
+    "irregular_sugar_level",
+    "lethargy",
+    "obesity",
+    "polyuria",
+    "restlessness",
+    "weight_loss"
+   ],
+   "desc_en": "Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy."
+  },
+  "Gastroenteritis": {
+   "ar": "النزلة المعوية",
+   "names": [
+    "نزله معويه",
+    "التهاب المعده والامعاء",
+    "تسمم غذائي"
+   ],
+   "en": "Gastroenteritis",
+   "desc": "عدوى غالباً فيروسية تسبب إسهالاً وتقيؤاً، وأكبر خطر فيها هو الجفاف.",
+   "care": [
+    "محلول الإرواء الفموي بكميات صغيرة ومتكررة",
+    "أكل خفيف بعد تحسن التقيؤ",
+    "غسل اليدين جيداً"
+   ],
+   "doctor": "طبيب عام أو باطنية",
+   "red_flags": "علامات جفاف شديد، دم في البراز، أو استمرار أكثر من يومين",
+   "urgent": false,
+   "prior": 1.3,
+   "symptoms": [
+    "abdominal_pain",
+    "dehydration",
+    "diarrhoea",
+    "loss_of_appetite",
+    "mild_fever",
+    "nausea",
+    "stomach_pain",
+    "sunken_eyes",
+    "vomiting"
+   ],
+   "desc_en": "Gastroenteritis is an inflammation of the digestive tract, particularly the stomach, and large and small intestines. Viral and bacterial gastroenteritis are intestinal infections associated with symptoms of diarrhea , abdominal cramps, nausea , and vomiting ."
+  },
+  "Bronchial Asthma": {
+   "ar": "الربو",
+   "names": [
+    "ربو",
+    "الربو",
+    "asthma"
+   ],
+   "en": "Bronchial Asthma",
+   "desc": "التهاب مزمن في الشعب الهوائية يسبب ضيق تنفس وصفيراً وكحة تزيد مع المثيرات.",
+   "care": [
+    "ابتعد عن الدخان والغبار والعطور القوية",
+    "احمل البخاخ الموصوف دائماً",
+    "اتبع خطة العلاج مع طبيبك"
+   ],
+   "doctor": "طبيب الأمراض الصدرية",
+   "red_flags": "ضيق شديد لا يتحسن بالبخاخ أو ازرقاق الشفاه = طوارئ",
+   "urgent": false,
+   "prior": 1.1,
+   "symptoms": [
+    "breathlessness",
+    "chest_pain",
+    "cough",
+    "family_history",
+    "fatigue",
+    "high_fever",
+    "mucoid_sputum"
+   ],
+   "desc_en": "Bronchial asthma is a medical condition which causes the airway path of the lungs to swell and narrow. Due to this swelling, the air path produces excess mucus making it hard to breathe, which results in coughing, short breath, and wheezing. The disease is chronic and interferes with daily working."
+  },
+  "Hypertension": {
+   "ar": "ارتفاع ضغط الدم",
+   "names": [
+    "ضغط الدم",
+    "ارتفاع الضغط",
+    "الضغط العالي",
+    "الضغط",
+    "ضغط",
+    "hypertension"
+   ],
+   "en": "Hypertension",
+   "desc": "ارتفاع مستمر في ضغط الدم، غالباً بدون أعراض ويُكتشف بالقياس، ويزيد خطر أمراض القلب والجلطات.",
+   "care": [
+    "قلّل الملح",
+    "امشِ يومياً وحافظ على وزن صحي",
+    "قِس الضغط بانتظام والتزم بالدواء"
+   ],
+   "doctor": "طبيب الباطنية أو القلب",
+   "red_flags": "ضغط مرتفع جداً مع صداع شديد أو ألم صدر أو ضعف = طوارئ",
+   "urgent": false,
+   "prior": 1.1,
+   "symptoms": [
+    "blurred_and_distorted_vision",
+    "chest_pain",
+    "dizziness",
+    "headache",
+    "lack_of_concentration",
+    "loss_of_balance"
+   ],
+   "desc_en": "Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure typically does not cause symptoms."
+  },
+  "Migraine": {
+   "ar": "الصداع النصفي (الشقيقة)",
+   "names": [
+    "شقيقه",
+    "صداع نصفي",
+    "الصداع النصفي",
+    "migraine"
+   ],
+   "en": "Migraine",
+   "desc": "نوبات صداع نابض غالباً في جهة واحدة، قد يرافقها غثيان وحساسية للضوء والصوت.",
+   "care": [
+    "ارتح في غرفة مظلمة وهادئة",
+    "نم بانتظام واشرب ماء كافياً",
+    "سجّل المحفزات (قلة النوم، أطعمة معينة، التوتر) لتتجنبها"
+   ],
+   "doctor": "طبيب الأعصاب",
+   "red_flags": "صداع مفاجئ وشديد جداً، أو مع ضعف أو تشوش = طوارئ",
+   "urgent": false,
+   "prior": 1.2,
+   "symptoms": [
+    "acidity",
+    "blurred_and_distorted_vision",
+    "depression",
+    "excessive_hunger",
+    "headache",
+    "indigestion",
+    "irritability",
+    "nausea",
+    "stiff_neck",
+    "visual_disturbances",
+    "vomiting"
+   ],
+   "desc_en": "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities."
+  },
+  "Cervical spondylosis": {
+   "ar": "خشونة فقرات الرقبة",
+   "names": [
+    "خشونه الرقبه",
+    "خشونه الفقرات",
+    "ديسك الرقبه"
+   ],
+   "en": "Cervical spondylosis",
+   "desc": "تآكل تدريجي في فقرات وغضاريف الرقبة مع التقدم بالعمر، يسبب ألماً وتيبساً.",
+   "care": [
+    "جلسة صحيحة وارفع الشاشة لمستوى النظر",
+    "تمارين إطالة لطيفة للرقبة",
+    "كمادات دافئة ووسادة مناسبة"
+   ],
+   "doctor": "طبيب العظام أو العلاج الطبيعي",
+   "red_flags": "ضعف أو تنميل متزايد في اليدين",
+   "urgent": false,
+   "prior": 1.05,
+   "symptoms": [
+    "back_pain",
+    "dizziness",
+    "loss_of_balance",
+    "neck_pain",
+    "weakness_in_limbs"
+   ],
+   "desc_en": "Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs)."
+  },
+  "Paralysis (brain hemorrhage)": {
+   "ar": "السكتة الدماغية / النزيف الدماغي",
+   "names": [
+    "جلطه دماغيه",
+    "سكته دماغيه",
+    "نزيف دماغي",
+    "شلل"
+   ],
+   "en": "Paralysis (brain hemorrhage)",
+   "desc": "حالة طارئة يحدث فيها نزيف أو انسداد في أوعية الدماغ، تسبب ضعفاً مفاجئاً في جهة من الجسم أو صعوبة في الكلام.",
+   "care": [
+    "اتصل بالإسعاف فوراً — كل دقيقة مهمة",
+    "سجّل وقت بداية الأعراض",
+    "لا تعطِ المريض أكلاً أو شرباً"
+   ],
+   "doctor": "الطوارئ فوراً",
+   "red_flags": "حالة طارئة",
+   "urgent": true,
+   "prior": 1.0,
+   "symptoms": [
+    "altered_sensorium",
+    "headache",
+    "vomiting",
+    "weakness_of_one_body_side"
+   ],
+   "desc_en": "Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body."
+  },
+  "Jaundice": {
+   "ar": "اليرقان (الصفار)",
+   "names": [
+    "يرقان",
+    "صفار",
+    "ابو صفار"
+   ],
+   "en": "Jaundice",
+   "desc": "اصفرار الجلد والعينين بسبب ارتفاع البيليروبين، وهو علامة على مشكلة في الكبد أو المرارة أو الدم وليس مرضاً بحد ذاته.",
+   "care": [
+    "راجع الطبيب لمعرفة السبب بالتحاليل",
+    "اشرب سوائل كافية",
+    "تجنّب أي أدوية أو أعشاب دون استشارة"
+   ],
+   "doctor": "طبيب الباطنية أو الكبد",
+   "red_flags": "اصفرار مع تشوش أو نزيف أو ألم بطن شديد",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "abdominal_pain",
+    "dark_urine",
+    "fatigue",
+    "high_fever",
+    "itching",
+    "vomiting",
+    "weight_loss",
+    "yellowish_skin"
+   ],
+   "desc_en": "Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids. Jaundice was once called the \"morbus regius\" (the regal disease) in the belief that only the touch of a king could cure it"
+  },
+  "Malaria": {
+   "ar": "الملاريا",
+   "names": [
+    "ملاريا",
+    "malaria"
+   ],
+   "en": "Malaria",
+   "desc": "عدوى طفيلية تنتقل بلدغة البعوض، تسبب نوبات حرارة ورعشة وتعرق، وتحتاج علاجاً سريعاً.",
+   "care": [
+    "راجع الطبيب فوراً خاصة بعد السفر لمناطق موبوءة",
+    "استخدم الناموسيات وطارد البعوض"
+   ],
+   "doctor": "طبيب الأمراض المعدية",
+   "red_flags": "تشوش أو اصفرار أو صعوبة تنفس = طوارئ",
+   "urgent": false,
+   "prior": 0.75,
+   "symptoms": [
+    "chills",
+    "diarrhoea",
+    "headache",
+    "high_fever",
+    "muscle_pain",
+    "nausea",
+    "sweating",
+    "vomiting"
+   ],
+   "desc_en": "An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type."
+  },
+  "Chicken pox": {
+   "ar": "جدري الماء (العنقز)",
+   "names": [
+    "جدري الماء",
+    "عنقز",
+    "جديري"
+   ],
+   "en": "Chicken pox",
+   "desc": "عدوى فيروسية معدية تسبب طفحاً جلدياً على شكل فقاعات مع حكة وحرارة.",
+   "care": [
+    "لا تحك الفقاعات وقصّ الأظافر",
+    "استحمام بماء فاتر",
+    "ابقَ في المنزل حتى تجف الفقاعات",
+    "لا تعطِ الأطفال الأسبرين"
+   ],
+   "doctor": "طبيب عام أو أطفال",
+   "red_flags": "صعوبة تنفس أو تشوش أو احمرار شديد حول الفقاعات",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "fatigue",
+    "headache",
+    "high_fever",
+    "itching",
+    "lethargy",
+    "loss_of_appetite",
+    "malaise",
+    "mild_fever",
+    "red_spots_over_body",
+    "skin_rash",
+    "swelled_lymph_nodes"
+   ],
+   "desc_en": "Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing between 250 and 500 itchy blisters."
+  },
+  "Dengue": {
+   "ar": "حمى الضنك",
+   "names": [
+    "ضنك",
+    "حمى الضنك",
+    "dengue"
+   ],
+   "en": "Dengue",
+   "desc": "عدوى فيروسية ينقلها البعوض، تسبب حرارة عالية وآلاماً شديدة في العضلات والمفاصل وخلف العينين.",
+   "care": [
+    "راحة وسوائل كثيرة",
+    "تجنّب الأسبرين ومضادات الالتهاب (قد تزيد خطر النزيف)",
+    "راجع الطبيب لتحليل الصفائح الدموية"
+   ],
+   "doctor": "طبيب الباطنية أو الأمراض المعدية",
+   "red_flags": "نزيف من اللثة أو الأنف، ألم بطن شديد، أو تقيؤ مستمر = طوارئ",
+   "urgent": false,
+   "prior": 0.8,
+   "symptoms": [
+    "back_pain",
+    "chills",
+    "fatigue",
+    "headache",
+    "high_fever",
+    "joint_pain",
+    "loss_of_appetite",
+    "malaise",
+    "muscle_pain",
+    "nausea",
+    "pain_behind_the_eyes",
+    "red_spots_over_body",
+    "skin_rash",
+    "vomiting"
+   ],
+   "desc_en": "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. — called also breakbone fever, dengue fever."
+  },
+  "Typhoid": {
+   "ar": "التيفوئيد",
+   "names": [
+    "تيفوئيد",
+    "تيفويد",
+    "التيفود"
+   ],
+   "en": "Typhoid",
+   "desc": "عدوى بكتيرية تنتقل عبر الطعام والماء الملوثين، تسبب حرارة مستمرة وآلام بطن.",
+   "care": [
+    "يحتاج تشخيصاً وعلاجاً من الطبيب",
+    "اشرب ماءً نظيفاً واغسل يديك جيداً",
+    "كُل طعاماً مطبوخاً جيداً"
+   ],
+   "doctor": "طبيب الباطنية أو الأمراض المعدية",
+   "red_flags": "ألم بطن شديد أو دم في البراز",
+   "urgent": false,
+   "prior": 0.8,
+   "symptoms": [
+    "abdominal_pain",
+    "belly_pain",
+    "chills",
+    "constipation",
+    "diarrhoea",
+    "fatigue",
+    "headache",
+    "high_fever",
+    "loss_of_appetite",
+    "nausea",
+    "toxic_look_(typhos)",
+    "vomiting"
+   ],
+   "desc_en": "An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is not usually severe."
+  },
+  "hepatitis A": {
+   "ar": "التهاب الكبد A",
+   "names": [
+    "التهاب الكبد a",
+    "كبد وبائي a",
+    "فيروس a"
+   ],
+   "en": "hepatitis A",
+   "desc": "عدوى فيروسية للكبد تنتقل عبر الطعام والماء الملوثين، وغالباً تُشفى تماماً.",
+   "care": [
+    "راحة وسوائل وتغذية خفيفة",
+    "تجنّب الدهون وأي أدوية دون استشارة",
+    "اغسل يديك لمنع نقل العدوى",
+    "يوجد لقاح وقائي"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "تشوش أو نعاس شديد أو نزيف",
+   "urgent": false,
+   "prior": 0.8,
+   "symptoms": [
+    "abdominal_pain",
+    "dark_urine",
+    "diarrhoea",
+    "joint_pain",
+    "loss_of_appetite",
+    "mild_fever",
+    "muscle_pain",
+    "nausea",
+    "vomiting",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. The virus is one of several types of hepatitis viruses that cause inflammation and affect your liver's ability to function."
+  },
+  "Hepatitis B": {
+   "ar": "التهاب الكبد B",
+   "names": [
+    "التهاب الكبد b",
+    "فيروس b",
+    "كبد وبائي b"
+   ],
+   "en": "Hepatitis B",
+   "desc": "عدوى فيروسية للكبد تنتقل عبر الدم وسوائل الجسم، وقد تصبح مزمنة.",
+   "care": [
+    "متابعة تحاليل الكبد بانتظام",
+    "لا تشارك الشفرات أو الإبر",
+    "يوجد لقاح فعّال للمخالطين"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "اصفرار شديد أو تشوش",
+   "urgent": false,
+   "prior": 0.8,
+   "symptoms": [
+    "abdominal_pain",
+    "dark_urine",
+    "fatigue",
+    "itching",
+    "lethargy",
+    "loss_of_appetite",
+    "malaise",
+    "receiving_blood_transfusion",
+    "receiving_unsterile_injections",
+    "yellow_urine",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it isn't treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus."
+  },
+  "Hepatitis C": {
+   "ar": "التهاب الكبد C",
+   "names": [
+    "التهاب الكبد c",
+    "فيروس c",
+    "فيروس سي"
+   ],
+   "en": "Hepatitis C",
+   "desc": "عدوى فيروسية تنتقل عبر الدم، ويتوفر لها اليوم علاج فعّال يشفي معظم الحالات.",
+   "care": [
+    "الفحص والعلاج المبكر",
+    "لا تشارك الأدوات الحادة"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 0.75,
+   "symptoms": [
+    "family_history",
+    "fatigue",
+    "loss_of_appetite",
+    "nausea",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer."
+  },
+  "Hepatitis D": {
+   "ar": "التهاب الكبد D",
+   "names": [
+    "التهاب الكبد d",
+    "فيروس d"
+   ],
+   "en": "Hepatitis D",
+   "desc": "عدوى فيروسية لا تصيب إلا من لديه فيروس B، وقد تجعل المرض أشد.",
+   "care": [
+    "متابعة مستمرة مع طبيب الكبد",
+    "لقاح B يقي منه أيضاً"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 0.6,
+   "symptoms": [
+    "abdominal_pain",
+    "dark_urine",
+    "fatigue",
+    "joint_pain",
+    "loss_of_appetite",
+    "nausea",
+    "vomiting",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "Hepatitis D, also known as the hepatitis delta virus, is an infection that causes the liver to become inflamed. This swelling can impair liver function and cause long-term liver problems, including liver scarring and cancer. The condition is caused by the hepatitis D virus (HDV)."
+  },
+  "Hepatitis E": {
+   "ar": "التهاب الكبد E",
+   "names": [
+    "التهاب الكبد e",
+    "فيروس e"
+   ],
+   "en": "Hepatitis E",
+   "desc": "عدوى فيروسية للكبد تنتقل عبر الماء الملوث، وقد تكون خطيرة على الحوامل.",
+   "care": [
+    "راحة وسوائل وماء نظيف",
+    "راجعي الطبيب فوراً في حال الحمل"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "تشوش أو نعاس شديد أو نزيف = طوارئ",
+   "urgent": false,
+   "prior": 0.65,
+   "symptoms": [
+    "abdominal_pain",
+    "acute_liver_failure",
+    "coma",
+    "dark_urine",
+    "fatigue",
+    "high_fever",
+    "joint_pain",
+    "loss_of_appetite",
+    "nausea",
+    "stomach_bleeding",
+    "vomiting",
+    "yellowing_of_eyes",
+    "yellowish_skin"
+   ],
+   "desc_en": "A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water. Hepatitis E does not cause chronic liver disease."
+  },
+  "Alcoholic hepatitis": {
+   "ar": "التهاب الكبد الكحولي",
+   "names": [
+    "كبد كحولي"
+   ],
+   "en": "Alcoholic hepatitis",
+   "desc": "التهاب في الكبد سببه شرب الكحول المفرط، وقد يتطور إلى تليّف.",
+   "care": [
+    "التوقف التام عن الكحول بمساعدة طبية",
+    "تغذية جيدة",
+    "متابعة طبية منتظمة"
+   ],
+   "doctor": "طبيب الكبد",
+   "red_flags": "تقيؤ دم أو تشوش = طوارئ",
+   "urgent": false,
+   "prior": 0.65,
+   "symptoms": [
+    "abdominal_pain",
+    "distention_of_abdomen",
+    "fluid_overload",
+    "history_of_alcohol_consumption",
+    "swelling_of_stomach",
+    "vomiting",
+    "yellowish_skin"
+   ],
+   "desc_en": "Alcoholic hepatitis is a diseased, inflammatory condition of the liver caused by heavy alcohol consumption over an extended period of time. It's also aggravated by binge drinking and ongoing alcohol use. If you develop this condition, you must stop drinking alcohol"
+  },
+  "Tuberculosis": {
+   "ar": "السل (الدرن)",
+   "names": [
+    "السل",
+    "درن",
+    "السل الرئوي",
+    "tuberculosis"
+   ],
+   "en": "Tuberculosis",
+   "desc": "عدوى بكتيرية تصيب الرئة غالباً، تسبب كحة طويلة وتعرقاً ليلياً ونقص وزن، وعلاجها متوفر.",
+   "care": [
+    "راجع الطبيب لفحص البلغم والأشعة",
+    "غطِّ فمك عند الكحة وهوِّ المكان",
+    "إكمال العلاج كاملاً (عدة أشهر) ضروري"
+   ],
+   "doctor": "طبيب الأمراض الصدرية",
+   "red_flags": "كحة مع دم كثير أو ضيق تنفس شديد",
+   "urgent": false,
+   "prior": 0.75,
+   "symptoms": [
+    "blood_in_sputum",
+    "breathlessness",
+    "chest_pain",
+    "chills",
+    "cough",
+    "fatigue",
+    "high_fever",
+    "loss_of_appetite",
+    "malaise",
+    "mild_fever",
+    "phlegm",
+    "sweating",
+    "swelled_lymph_nodes",
+    "vomiting",
+    "weight_loss",
+    "yellowing_of_eyes"
+   ],
+   "desc_en": "Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis."
+  },
+  "Common Cold": {
+   "ar": "نزلة البرد (الزكام)",
+   "names": [
+    "زكام",
+    "نزله برد",
+    "انفلونزا",
+    "flu",
+    "common cold"
+   ],
+   "en": "Common Cold",
+   "desc": "عدوى فيروسية بسيطة تصيب الأنف والحلق، وتتحسن عادة خلال أسبوع إلى 10 أيام.",
+   "care": [
+    "راحة وسوائل دافئة",
+    "غسول ملحي للأنف",
+    "عسل للحلق (ليس للرضع تحت سنة)",
+    "المضاد الحيوي لا يعالج الفيروسات"
+   ],
+   "doctor": "طبيب عام إذا طالت الأعراض",
+   "red_flags": "ضيق تنفس، أو حرارة عالية لأكثر من 3 أيام",
+   "urgent": false,
+   "prior": 1.35,
+   "symptoms": [
+    "chest_pain",
+    "chills",
+    "congestion",
+    "continuous_sneezing",
+    "cough",
+    "fatigue",
+    "headache",
+    "high_fever",
+    "loss_of_smell",
+    "malaise",
+    "muscle_pain",
+    "phlegm",
+    "redness_of_eyes",
+    "runny_nose",
+    "sinus_pressure",
+    "swelled_lymph_nodes",
+    "throat_irritation"
+   ],
+   "desc_en": "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold."
+  },
+  "Pneumonia": {
+   "ar": "الالتهاب الرئوي",
+   "names": [
+    "التهاب رئوي",
+    "ذات الرئه",
+    "نيمونيا",
+    "pneumonia"
+   ],
+   "en": "Pneumonia",
+   "desc": "عدوى في الرئة تسبب حرارة وكحة مع بلغم وضيق تنفس، وقد تكون خطيرة على كبار السن والأطفال.",
+   "care": [
+    "راجع الطبيب للفحص والأشعة",
+    "راحة وسوائل"
+   ],
+   "doctor": "طبيب الصدرية أو الباطنية",
+   "red_flags": "ضيق تنفس شديد أو ازرقاق أو تشوش = طوارئ",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "breathlessness",
+    "chest_pain",
+    "chills",
+    "cough",
+    "fast_heart_rate",
+    "fatigue",
+    "high_fever",
+    "malaise",
+    "phlegm",
+    "rusty_sputum",
+    "sweating"
+   ],
+   "desc_en": "Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it. The infection causes inflammation in the air sacs in your lungs, which are called alveoli. The alveoli fill with fluid or pus, making it difficult to breathe."
+  },
+  "Dimorphic hemmorhoids(piles)": {
+   "ar": "البواسير",
+   "names": [
+    "بواسير",
+    "البواسير"
+   ],
+   "en": "Dimorphic hemmorhoids(piles)",
+   "desc": "انتفاخ الأوعية الدموية حول فتحة الشرج، من أسبابها الإمساك والجلوس الطويل.",
+   "care": [
+    "أكثر من الألياف والماء لتجنب الإمساك",
+    "لا تجلس طويلاً في الحمام",
+    "جلسات ماء دافئ"
+   ],
+   "doctor": "جرّاح عام أو جراح القولون",
+   "red_flags": "نزيف كثير أو براز أسود",
+   "urgent": false,
+   "prior": 1.05,
+   "symptoms": [
+    "bloody_stool",
+    "constipation",
+    "irritation_in_anus",
+    "pain_during_bowel_movements",
+    "pain_in_anal_region"
+   ],
+   "desc_en": ""
+  },
+  "Heart attack": {
+   "ar": "النوبة القلبية (الجلطة القلبية)",
+   "names": [
+    "جلطه قلبيه",
+    "نوبه قلبيه",
+    "ذبحه صدريه",
+    "جلطه"
+   ],
+   "en": "Heart attack",
+   "desc": "انسداد مفاجئ في أحد شرايين القلب، وهي حالة طارئة تهدد الحياة.",
+   "care": [
+    "اتصل بالإسعاف فوراً",
+    "اجلس وارتح ولا تبذل أي مجهود",
+    "لا تقُد السيارة بنفسك"
+   ],
+   "doctor": "الطوارئ فوراً",
+   "red_flags": "حالة طارئة",
+   "urgent": true,
+   "prior": 1.0,
+   "symptoms": [
+    "breathlessness",
+    "chest_pain",
+    "sweating",
+    "vomiting"
+   ],
+   "desc_en": "The death of heart muscle due to the loss of blood supply. The loss of blood supply is usually caused by a complete blockage of a coronary artery, one of the arteries that supplies blood to the heart muscle."
+  },
+  "Varicose veins": {
+   "ar": "دوالي الساقين",
+   "names": [
+    "دوالي",
+    "الدوالي",
+    "varicose"
+   ],
+   "en": "Varicose veins",
+   "desc": "أوردة متضخمة وملتوية في الساقين بسبب ضعف صمامات الأوردة.",
+   "care": [
+    "ارفع ساقيك عند الراحة",
+    "تجنّب الوقوف الطويل",
+    "الجوارب الضاغطة الطبية",
+    "المشي اليومي"
+   ],
+   "doctor": "جرّاح الأوعية الدموية",
+   "red_flags": "تورم مفاجئ مؤلم في ساق واحدة مع احمرار",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "bruising",
+    "cramps",
+    "fatigue",
+    "obesity",
+    "prominent_veins_on_calf",
+    "swollen_blood_vessels",
+    "swollen_legs"
+   ],
+   "desc_en": "A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs."
+  },
+  "Hypothyroidism": {
+   "ar": "قصور الغدة الدرقية (خمول الغدة)",
+   "names": [
+    "خمول الغده",
+    "قصور الغده",
+    "الغده الدرقيه",
+    "hypothyroid"
+   ],
+   "en": "Hypothyroidism",
+   "desc": "ضعف إنتاج هرمون الغدة الدرقية، يسبب تعباً وزيادة وزن وبرودة واكتئاباً.",
+   "care": [
+    "تحليل TSH يؤكد التشخيص",
+    "العلاج الهرموني فعّال مع المتابعة",
+    "خذ الدواء بنفس الوقت يومياً"
+   ],
+   "doctor": "طبيب الغدد الصماء",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "abnormal_menstruation",
+    "brittle_nails",
+    "cold_hands_and_feets",
+    "depression",
+    "dizziness",
+    "enlarged_thyroid",
+    "fatigue",
+    "irritability",
+    "lethargy",
+    "mood_swings",
+    "puffy_face_and_eyes",
+    "swollen_extremeties",
+    "weight_gain"
+   ],
+   "desc_en": "Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone."
+  },
+  "Hyperthyroidism": {
+   "ar": "فرط نشاط الغدة الدرقية",
+   "names": [
+    "فرط نشاط الغده",
+    "نشاط الغده",
+    "hyperthyroid"
+   ],
+   "en": "Hyperthyroidism",
+   "desc": "زيادة إفراز هرمون الغدة الدرقية، يسبب خفقاناً ونقص وزن وتوتراً وتعرقاً.",
+   "care": [
+    "راجع الطبيب لتحاليل الغدة",
+    "قلّل الكافيين"
+   ],
+   "doctor": "طبيب الغدد الصماء",
+   "red_flags": "خفقان شديد مع حرارة أو تشوش",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "abnormal_menstruation",
+    "diarrhoea",
+    "excessive_hunger",
+    "fast_heart_rate",
+    "fatigue",
+    "irritability",
+    "mood_swings",
+    "muscle_weakness",
+    "restlessness",
+    "sweating",
+    "weight_loss"
+   ],
+   "desc_en": "Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat."
+  },
+  "Hypoglycemia": {
+   "ar": "هبوط السكر",
+   "names": [
+    "هبوط السكر",
+    "نقص السكر",
+    "السكر نازل",
+    "hypoglycemia"
+   ],
+   "en": "Hypoglycemia",
+   "desc": "انخفاض سكر الدم عن المعدل الطبيعي، شائع لدى مرضى السكري، ويسبب رجفة وتعرقاً ودوخة.",
+   "care": [
+    "تناول فوراً شيئاً سكرياً سريعاً (عصير أو ملعقة عسل) إذا كنت واعياً",
+    "أعد القياس بعد 15 دقيقة",
+    "ثم تناول وجبة خفيفة"
+   ],
+   "doctor": "طبيب السكري",
+   "red_flags": "فقدان وعي أو تشوش شديد = طوارئ",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "anxiety",
+    "blurred_and_distorted_vision",
+    "drying_and_tingling_lips",
+    "excessive_hunger",
+    "fatigue",
+    "headache",
+    "irritability",
+    "nausea",
+    "palpitations",
+    "slurred_speech",
+    "sweating",
+    "vomiting"
+   ],
+   "desc_en": "Hypoglycemia is a condition in which your blood sugar (glucose) level is lower than normal. Glucose is your body's main energy source. Hypoglycemia is often related to diabetes treatment. But other drugs and a variety of conditions — many rare — can cause low blood sugar in people who don't have diabetes."
+  },
+  "Osteoarthristis": {
+   "ar": "خشونة المفاصل",
+   "names": [
+    "خشونه",
+    "خشونه المفاصل",
+    "خشونه الركبه"
+   ],
+   "en": "Osteoarthristis",
+   "desc": "تآكل غضاريف المفاصل مع العمر، خاصة الركبة والورك، يسبب ألماً وتيبساً.",
+   "care": [
+    "إنقاص الوزن يخفف الضغط على المفاصل",
+    "تمارين تقوية وسباحة",
+    "كمادات دافئة"
+   ],
+   "doctor": "طبيب العظام",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 1.05,
+   "symptoms": [
+    "hip_joint_pain",
+    "joint_pain",
+    "knee_pain",
+    "neck_pain",
+    "painful_walking",
+    "swelling_joints"
+   ],
+   "desc_en": "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time."
+  },
+  "Arthritis": {
+   "ar": "التهاب المفاصل",
+   "names": [
+    "التهاب المفاصل",
+    "روماتيزم",
+    "روماتويد",
+    "arthritis"
+   ],
+   "en": "Arthritis",
+   "desc": "التهاب يصيب المفاصل مسبباً ألماً وتورماً وتيبساً خاصة في الصباح.",
+   "care": [
+    "حركة لطيفة منتظمة",
+    "كمادات حسب ما يريحك",
+    "مراجعة الطبيب لتحديد نوع الالتهاب"
+   ],
+   "doctor": "طبيب الروماتيزم",
+   "red_flags": "مفصل ساخن ومتورم مع حرارة",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "movement_stiffness",
+    "muscle_weakness",
+    "painful_walking",
+    "stiff_neck",
+    "swelling_joints"
+   ],
+   "desc_en": "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis."
+  },
+  "(vertigo) Paroymsal  Positional Vertigo": {
+   "ar": "الدوار الوضعي (دوخة الأذن الداخلية)",
+   "names": [
+    "دوار وضعي",
+    "دوخه الاذن",
+    "الاذن الداخليه"
+   ],
+   "en": "(vertigo) Paroymsal  Positional Vertigo",
+   "desc": "نوبات دوار قصيرة تحدث مع تغيير وضعية الرأس بسبب مشكلة في الأذن الداخلية.",
+   "care": [
+    "تحرك ببطء عند القيام",
+    "اجلس فوراً عند الدوار لتجنب السقوط",
+    "توجد تمارين علاجية (مناورة إيبلي) يعلّمها الطبيب"
+   ],
+   "doctor": "طبيب الأنف والأذن أو الأعصاب",
+   "red_flags": "دوار مع ضعف أو ثقل كلام أو صداع شديد = طوارئ",
+   "urgent": false,
+   "prior": 1.05,
+   "symptoms": [
+    "headache",
+    "loss_of_balance",
+    "nausea",
+    "spinning_movements",
+    "unsteadiness",
+    "vomiting"
+   ],
+   "desc_en": "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo — the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness."
+  },
+  "Acne": {
+   "ar": "حب الشباب",
+   "names": [
+    "حب الشباب",
+    "acne"
+   ],
+   "en": "Acne",
+   "desc": "انسداد مسام الجلد بالزيوت والبكتيريا، شائع في سن المراهقة.",
+   "care": [
+    "اغسل وجهك مرتين يومياً بغسول لطيف",
+    "لا تعصر الحبوب",
+    "استخدم منتجات لا تسد المسام (non-comedogenic)"
+   ],
+   "doctor": "طبيب الجلدية",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 1.2,
+   "symptoms": [
+    "blackheads",
+    "pus_filled_pimples",
+    "scurring",
+    "skin_rash"
+   ],
+   "desc_en": "Acne vulgaris is the formation of comedones, papules, pustules, nodules, and/or cysts as a result of obstruction and inflammation of pilosebaceous units (hair follicles and their accompanying sebaceous gland). Acne develops on the face and upper trunk. It most often affects adolescents."
+  },
+  "Urinary tract infection": {
+   "ar": "التهاب المسالك البولية",
+   "names": [
+    "التهاب البول",
+    "التهاب المسالك",
+    "التهاب المثانه",
+    "uti"
+   ],
+   "en": "Urinary tract infection",
+   "desc": "عدوى بكتيرية في المثانة أو المسالك، تسبب حرقة وكثرة التبول.",
+   "care": [
+    "اشرب ماء كثيراً",
+    "لا تحبس البول",
+    "راجع الطبيب لتحليل البول والعلاج المناسب"
+   ],
+   "doctor": "طبيب عام أو المسالك البولية",
+   "red_flags": "حرارة مع ألم في الخاصرة أو الظهر",
+   "urgent": false,
+   "prior": 1.2,
+   "symptoms": [
+    "abdominal_pain",
+    "bladder_discomfort",
+    "burning_micturition",
+    "continuous_feel_of_urine",
+    "foul_smell_ofurine",
+    "mild_fever",
+    "polyuria"
+   ],
+   "desc_en": "Urinary tract infection: An infection of the kidney, ureter, bladder, or urethra. Abbreviated UTI. Not everyone with a UTI has symptoms, but common symptoms include a frequent urge to urinate and pain or burning when urinating."
+  },
+  "Psoriasis": {
+   "ar": "الصدفية",
+   "names": [
+    "صدفيه",
+    "الصدفيه",
+    "psoriasis"
+   ],
+   "en": "Psoriasis",
+   "desc": "مرض مناعي مزمن غير معدٍ يسبب بقعاً حمراء مغطاة بقشور فضية.",
+   "care": [
+    "رطّب الجلد باستمرار",
+    "تعرّض معتدل للشمس",
+    "تجنّب التوتر والتدخين"
+   ],
+   "doctor": "طبيب الجلدية",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 1.0,
+   "symptoms": [
+    "inflammatory_nails",
+    "joint_pain",
+    "silver_like_dusting",
+    "skin_peeling",
+    "skin_rash",
+    "small_dents_in_nails"
+   ],
+   "desc_en": "Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back. Psoriasis can't be passed from person to person. It does sometimes happen in members of the same family."
+  },
+  "Impetigo": {
+   "ar": "القوباء",
+   "names": [
+    "قوباء",
+    "impetigo"
+   ],
+   "en": "Impetigo",
+   "desc": "عدوى جلدية بكتيرية معدية شائعة عند الأطفال، تسبب قروحاً حمراء تتحول لقشور صفراء.",
+   "care": [
+    "اغسل المنطقة بلطف بالماء والصابون",
+    "لا تحكها وقصّ الأظافر",
+    "لا تشارك المناشف",
+    "تحتاج غالباً مرهماً مضاداً حيوياً يصفه الطبيب"
+   ],
+   "doctor": "طبيب الجلدية أو الأطفال",
+   "red_flags": "",
+   "urgent": false,
+   "prior": 0.9,
+   "symptoms": [
+    "blister",
+    "high_fever",
+    "red_sore_around_nose",
+    "skin_rash",
+    "yellow_crust_ooze"
+   ],
+   "desc_en": "Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child's nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts."
+  }
+ },
+ "topics": [
+  {
+   "id": "greet",
+   "small": true,
+   "keys": "مرحبا|السلام عليكم|السلام|هلا|اهلا|صباح الخير|مساء الخير|hello|hi|hey",
+   "answers": [
+    "أهلاً وسهلاً 👋 أنا **MediBot**، مساعدك الصحي الذكي.\nاحكِ لي وش تحس فيه بالتفصيل — مثلاً: «عندي صداع وحرارة من يومين» — وأنا بسألك كم سؤال عشان أفهم حالتك وأعطيك إرشادات مناسبة.",
+    "هلا والله! 😊 كيف أقدر أساعدك اليوم؟ صف لي الأعراض اللي عندك، أو اسألني عن أي مرض وأشرح لك عنه."
+   ]
+  },
+  {
+   "id": "thanks",
+   "small": true,
+   "keys": "شكرا|مشكور|يعطيك العافيه|تسلم|thanks|thank you",
+   "answers": [
+    "العفو، هذا واجبي 🌿 أتمنى لك الصحة والعافية. إذا تغيرت الأعراض أو عندك سؤال ثاني أنا موجود.",
+    "الله يعافيك! 💙 لا تتردد ترجع لي بأي وقت."
+   ]
+  },
+  {
+   "id": "bye",
+   "small": true,
+   "keys": "مع السلامه|باي|الى اللقاء|bye",
+   "answers": [
+    "مع السلامة، الله يشفيك ويعافيك 🌷"
+   ]
+  },
+  {
+   "id": "who",
+   "small": true,
+   "keys": "من انت|مين انت|وش انت|ايش انت|عرف نفسك|who are you",
+   "answers": [
+    "أنا **MediBot** 🤖🩺 — مساعد صحي ذكي مبني كمشروع تخرج.\nأفهم الأعراض اللي تكتبها بالعربي (حتى باللهجة)، وأقارنها بقاعدة بيانات فيها **41 مرض وأكثر من 130 عرض**، وأسألك أسئلة متابعة عشان أقترب من الحالة الأقرب، ثم أعطيك نصائح آمنة ومتى لازم تراجع الطبيب."
+   ]
+  },
+  {
+   "id": "dose",
+   "keys": "جرعه|كم حبه|كم مره اخذ|كم ملي|dose|dosage",
+   "answers": [
+    "ما أقدر أحدد جرعات الأدوية لأنها تعتمد على العمر والوزن والحالة الصحية والأدوية الثانية اللي تاخذها.\nالأفضل تتبع النشرة الداخلية للدواء، أو تسأل الصيدلي — هو الأدق في هذا الموضوع 💊"
+   ]
+  },
+  {
+   "id": "sleep",
+   "keys": "نوم|ارق|ما انام|ما اقدر انام|سهر|insomnia|sleep",
+   "answers": [
+    "مشاكل النوم مزعجة فعلاً 😴 هذي أهم الأشياء اللي تساعد:\n• نام واصحَ في **نفس الموعد** يومياً حتى بالإجازات\n• لا شاشات قبل النوم بساعة\n• لا كافيين بعد العصر\n• غرفة مظلمة وهادئة ومعتدلة البرودة\n• إذا ما جاك النوم خلال 20 دقيقة، قم سوِّ شي هادئ وارجع\n\nإذا استمر الأرق أكثر من شهر أو أثر على يومك، يستاهل تستشير طبيب."
+   ]
+  },
+  {
+   "id": "diet",
+   "keys": "تغذيه|اكل صحي|غذاء صحي|رجيم|نظام غذائي|diet|nutrition",
+   "answers": [
+    "التغذية الصحية ببساطة:\n• نصف الصحن خضار وفواكه\n• بروتين (سمك، دجاج، بقوليات، بيض)\n• حبوب كاملة بدل المكررة\n• ماء كافٍ وتقليل المشروبات الغازية والسكريات والمقليات\n\nللحصول على خطة تناسب جسمك وحالتك، أخصائي التغذية هو الأفضل 🥗"
+   ]
+  },
+  {
+   "id": "mental",
+   "keys": "توتر|ضغط نفسي|اكتئاب|حزين|زعلان|نفسيتي|stress|depress",
+   "answers": [
+    "أقدّر إنك تشاركني هذا 💙 مشاعرك مهمة.\n• جرّب التنفس البطيء: شهيق 4 ثوانٍ، حبس 4، زفير 6\n• تكلم مع شخص تثق فيه\n• المشي والنوم المنتظم يفرقون كثير\n• قلل الكافيين والسهر\n\nإذا استمر الشعور أكثر من أسبوعين أو صار يأثر على حياتك، المختص النفسي يقدر يساعدك فعلاً — وهذا شي طبيعي وشجاع."
+   ]
+  },
+  {
+   "id": "covid",
+   "keys": "كورونا|كوفيد|covid",
+   "answers": [
+    "أعراض كوفيد تشبه الإنفلونزا: حرارة، كحة، تعب، فقدان شم أو تذوق.\n• اعزل نفسك وارتح واشرب سوائل\n• تقدر تسوي فحص منزلي سريع\n• 🚩 ضيق تنفس أو ألم صدر = طوارئ فوراً"
+   ]
+  },
+  {
+   "id": "water",
+   "keys": "كم اشرب ماء|شرب الماء|شرب ماء|الماء|hydration",
+   "answers": [
+    "احتياج الماء يختلف حسب الوزن والجو والنشاط. علامة بسيطة: إذا لون البول **فاتح** فأنت غالباً شارب كفاية 💧\nزِد الماء في الحر وأثناء الرياضة والحرارة والإسهال."
+   ]
+  },
+  {
+   "id": "exercise",
+   "keys": "رياضه|تمارين|exercise|مشي",
+   "answers": [
+    "النشاط البدني من أقوى الأدوية الوقائية 🏃\n• ابدأ بالمشي السريع 30 دقيقة أغلب أيام الأسبوع\n• أضف تمارين تقوية مرتين بالأسبوع\n• ابدأ تدريجياً، وإذا عندك مرض قلب أو ضغط أو سكر استشر طبيبك قبل التمارين القوية"
+   ]
+  },
+  {
+   "id": "smoking",
+   "keys": "تدخين|دخان|سجاير|سيجاره|شيشه|smok",
+   "answers": [
+    "ترك التدخين أفضل قرار صحي ممكن 🚭\n• حدد يوم للتوقف وأخبر من حولك\n• تجنّب المحفزات (القهوة مع السيجارة مثلاً)\n• بدائل النيكوتين والعيادات المتخصصة تضاعف فرص النجاح\nالفوائد تبدأ من أول يوم!"
+   ]
+  }
+ ],
+ "emergency": [
+  "الم في الصدر",
+  "الم بالصدر",
+  "الم صدر",
+  "وجع صدر",
+  "وجع في الصدر",
+  "صدري يعورني",
+  "ضيق تنفس شديد",
+  "ما اقدر اتنفس",
+  "ما اقدر اتنفس",
+  "لا استطيع التنفس",
+  "اغماء",
+  "اغمي",
+  "فقدان الوعي",
+  "فقد الوعي",
+  "نزيف شديد",
+  "نزيف",
+  "شلل",
+  "ضعف نص الجسم",
+  "ضعف جهه وحده",
+  "تنميل نص الجسم",
+  "ثقل في الكلام",
+  "تسمم",
+  "جلطه",
+  "غيبوبه",
+  "استفراغ دم",
+  "تقيؤ دم",
+  "chest pain",
+  "can't breathe",
+  "cannot breathe",
+  "unconscious",
+  "severe bleeding",
+  "stroke",
+  "seizure",
+  "تشنجات",
+  "نوبه صرع"
+ ],
+ "selfharm": [
+  "انتحار",
+  "انتحر",
+  "اوذي نفسي",
+  "اقتل نفسي",
+  "انهي حياتي",
+  "ابي اموت",
+  "suicide",
+  "kill myself"
+ ]
+}
